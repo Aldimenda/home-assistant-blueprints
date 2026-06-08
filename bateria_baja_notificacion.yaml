@@ -1,6 +1,8 @@
 blueprint:
   name: Detección y notificación de batería baja para todos los sensores
   description: Comprueba regularmente todos los sensores con la clase de dispositivo 'battery' para verificar si bajan de un umbral específico y, de ser así, ejecuta una acción.
+
+                Fork from sbyx
   domain: automation
   input:
     threshold:
