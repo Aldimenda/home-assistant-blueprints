@@ -28,13 +28,13 @@ blueprint:
       selector:
         select:
           options:
-          - Monday
-          - Tuesday
-          - Wednesday
-          - Thursday
-          - Friday
-          - Saturday
-          - Sunday
+          - Lunes
+          - Martes
+          - Miercoles
+          - Jueves
+          - Viernes
+          - Sabado
+          - Domingo 
           mode: list
           multiple: true
           custom_value: false
