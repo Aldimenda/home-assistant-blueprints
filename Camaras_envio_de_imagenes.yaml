@@ -4,8 +4,7 @@ blueprint:
     or si el estado de un sensor binario pasa de 'off' a 'on', y envía una notificación a
     tu teléfono con la imagen. Al hacer clic en la notificación, se navegará a la URL del cuadro de mando. [Más información](https://community.home-assistant.io/t/camera-send-save-snapshot-to-mobile-device-when-motion-is-detected-with-conditions/604156)
     (v2.2.9) [Automatización]
-  author: TheFalseReality
-  traductor: aldimenda
+  author: TheFalseReality (Traducción por aldimenda)
   homeassistant:
     min_version: 2024.6.0
   domain: automation
