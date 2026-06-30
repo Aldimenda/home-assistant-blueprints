@@ -76,7 +76,12 @@ trigger:
     at: !input time
 condition:
   - condition: template
-    value_template: '{{ sensors != '''' and now().strftime(''%A'') in days }}'
+    value_template: >
+      {% set dia_hoy = now().isoweekday() %}
+      {% set dias_map = {
+        1: 'Lunes', 2: 'Martes', 3: 'Miercoles', 
+        4: 'Jueves', 5: 'Viernes', 6: 'Sabado', 7: 'Domingo' } %}
+      {{ sensors != '' and dias_map[dia_hoy] in days }}
 action:
   - choose: []
     default: !input actions
